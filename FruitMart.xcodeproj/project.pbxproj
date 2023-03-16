@@ -19,6 +19,8 @@
 		B50740B029BF5D7700B935EB /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50740AF29BF5D7700B935EB /* Product.swift */; };
 		B50740B229BFA84D00B935EB /* Button_Pr.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50740B129BFA84D00B935EB /* Button_Pr.swift */; };
 		B50740B429C0658D00B935EB /* Navigation_Pr.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50740B329C0658D00B935EB /* Navigation_Pr.swift */; };
+		B50740B729C33BD200B935EB /* BundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50740B629C33BD200B935EB /* BundleExtension.swift */; };
+		B50740B929C33F5100B935EB /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50740B829C33F5100B935EB /* Store.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,10 +34,12 @@
 		5238EAD9240BAC930079E99D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5238EAE6240BAEBC0079E99D /* ProductData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ProductData.json; sourceTree = "<group>"; };
 		B50740AB29BDEDD500B935EB /* ProductRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRow.swift; sourceTree = "<group>"; };
-		B50740AD29BE027C00B935EB /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ColorExtension.swift; path = "FruitMart/Source/User Interface/Home/ColorExtension.swift"; sourceTree = SOURCE_ROOT; };
+		B50740AD29BE027C00B935EB /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ColorExtension.swift; path = FruitMart/Source/Helper/Extension/ColorExtension.swift; sourceTree = SOURCE_ROOT; };
 		B50740AF29BF5D7700B935EB /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Product.swift; path = "FruitMart/Source/User Interface/Home/Product.swift"; sourceTree = SOURCE_ROOT; };
 		B50740B129BFA84D00B935EB /* Button_Pr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button_Pr.swift; sourceTree = "<group>"; };
 		B50740B329C0658D00B935EB /* Navigation_Pr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigation_Pr.swift; sourceTree = "<group>"; };
+		B50740B629C33BD200B935EB /* BundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExtension.swift; sourceTree = "<group>"; };
+		B50740B829C33F5100B935EB /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Store.swift; path = FruitMart/Source/Helper/Extension/Store.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				B50740AF29BF5D7700B935EB /* Product.swift */,
+				B50740B829C33F5100B935EB /* Store.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -152,9 +157,18 @@
 		5238EAEC240BF9FE0079E99D /* Helper */ = {
 			isa = PBXGroup;
 			children = (
-				B50740AD29BE027C00B935EB /* ColorExtension.swift */,
+				B50740B529C33BB500B935EB /* Extension */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		B50740B529C33BB500B935EB /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B50740AD29BE027C00B935EB /* ColorExtension.swift */,
+				B50740B629C33BD200B935EB /* BundleExtension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,8 +245,10 @@
 			files = (
 				B50740B229BFA84D00B935EB /* Button_Pr.swift in Sources */,
 				B50740AC29BDEDD500B935EB /* ProductRow.swift in Sources */,
+				B50740B729C33BD200B935EB /* BundleExtension.swift in Sources */,
 				5238EACC240BAC920079E99D /* AppDelegate.swift in Sources */,
 				5238EACE240BAC920079E99D /* SceneDelegate.swift in Sources */,
+				B50740B929C33F5100B935EB /* Store.swift in Sources */,
 				5238EAD0240BAC920079E99D /* Home.swift in Sources */,
 				B50740AE29BE027C00B935EB /* ColorExtension.swift in Sources */,
 				B50740B029BF5D7700B935EB /* Product.swift in Sources */,
