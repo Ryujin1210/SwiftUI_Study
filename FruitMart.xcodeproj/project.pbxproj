@@ -21,6 +21,7 @@
 		B50740B429C0658D00B935EB /* Navigation_Pr.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50740B329C0658D00B935EB /* Navigation_Pr.swift */; };
 		B50740B729C33BD200B935EB /* BundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50740B629C33BD200B935EB /* BundleExtension.swift */; };
 		B50740B929C33F5100B935EB /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50740B829C33F5100B935EB /* Store.swift */; };
+		B50740BB29C350E900B935EB /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50740BA29C350E900B935EB /* ProductDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		B50740B329C0658D00B935EB /* Navigation_Pr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigation_Pr.swift; sourceTree = "<group>"; };
 		B50740B629C33BD200B935EB /* BundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExtension.swift; sourceTree = "<group>"; };
 		B50740B829C33F5100B935EB /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Store.swift; path = FruitMart/Source/Helper/Extension/Store.swift; sourceTree = SOURCE_ROOT; };
+		B50740BA29C350E900B935EB /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +152,7 @@
 				B50740AB29BDEDD500B935EB /* ProductRow.swift */,
 				B50740B129BFA84D00B935EB /* Button_Pr.swift */,
 				B50740B329C0658D00B935EB /* Navigation_Pr.swift */,
+				B50740BA29C350E900B935EB /* ProductDetailView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -245,6 +248,7 @@
 			files = (
 				B50740B229BFA84D00B935EB /* Button_Pr.swift in Sources */,
 				B50740AC29BDEDD500B935EB /* ProductRow.swift in Sources */,
+				B50740BB29C350E900B935EB /* ProductDetailView.swift in Sources */,
 				B50740B729C33BD200B935EB /* BundleExtension.swift in Sources */,
 				5238EACC240BAC920079E99D /* AppDelegate.swift in Sources */,
 				5238EACE240BAC920079E99D /* SceneDelegate.swift in Sources */,
