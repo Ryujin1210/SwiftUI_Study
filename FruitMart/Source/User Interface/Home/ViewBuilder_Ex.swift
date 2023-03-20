@@ -98,13 +98,16 @@ struct MyVStack<Content: View>: View {
             .environment(\.font, .title) // 1
             .environment(\.lineLimit, 1) // 2
             .environment(\.minimumScaleFactor, 0.5) // 3
+        
     }
 }
 
 struct ViewBuilder_Ex_Previews: PreviewProvider {
     static var previews: some View {
+        
         ViewBuilder_Ex()
             .previewDevice(PreviewDevice(rawValue: "iPhone 11 Pro"))
+        ContentView()
     }
 }
 
@@ -127,3 +130,37 @@ func someFunction() {
 }
 */
 
+// LTR, RTL
+struct ContentView: View {
+    @Environment(\.layoutDirection) var layoutDirection
+    
+    var body: some View {
+        /*
+        if layoutDirection == .leftToRight {
+            return Text("Left to Right")    // LTR 언어 사용 환경에서 출력
+        } else {
+            return Text("Right to Left")    // RTL 언어 사용 환경에서 출력
+        }
+        */
+        MySubview()
+            .environment(\.myEnvironment, 10)   // myEnvironment에 10이라는 값 설정
+    }
+}
+struct MySubview: View {
+    @Environment(\.myEnvironment) var myValue
+    var body: some View {
+        Text("\(myValue)")  // 결과 10
+    }
+}
+
+// custom environment
+struct MyEnvironmentKey: EnvironmentKey {
+    static let defaultValue: Int = 0
+}
+
+extension EnvironmentValues {
+    var myEnvironment: Int {
+        get { self[MyEnvironmentKey.self]}
+        set { self[MyEnvironmentKey.self] = newValue}
+    }
+}
