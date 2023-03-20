@@ -93,13 +93,18 @@ struct MyVStack<Content: View>: View {
         VStack(alignment: .leading, spacing: 5) {
             content
         }
+    // enviroment 설정
+        Text("Hello, SwiftUI").frame(width: 100)
+            .environment(\.font, .title) // 1
+            .environment(\.lineLimit, 1) // 2
+            .environment(\.minimumScaleFactor, 0.5) // 3
     }
 }
 
 struct ViewBuilder_Ex_Previews: PreviewProvider {
     static var previews: some View {
         ViewBuilder_Ex()
-            .previewDevice(PreviewDevice(rawValue: "iPhone 8"))
+            .previewDevice(PreviewDevice(rawValue: "iPhone 11 Pro"))
     }
 }
 
