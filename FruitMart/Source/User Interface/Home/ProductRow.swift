@@ -84,7 +84,16 @@ private extension ProductRow { // extension 확장
 
 struct ProductRow_Previews: PreviewProvider {
     static var previews: some View {
-        ProductRow(product: productSamples[0])
+       // ProductRow(product: productSamples[0])
+        Group {
+            ForEach(productSamples) {
+                ProductRow(product: $0)
+            }
+            ProductRow(product: productSamples[0])
+                .preferredColorScheme(.dark)
+        }
+        .padding()
+        .previewLayout(.sizeThatFits)
     }
 }
 
