@@ -9,7 +9,30 @@
 import SwiftUI
 
 struct Button_Pr: View {
+    @State private var framework: String = "UIKit"
+    
+    @State private var isFavorite = true
+    @State private var count = 0
+    
   var body: some View {
+      
+      // @State와 Binding 토글과 스테퍼로
+      VStack(spacing: 30) {
+          Toggle(isOn: $isFavorite) { //
+              Text("isFavorite : \(isFavorite.description)")
+          }
+          Stepper("Count: \(count)", value: $count)
+      }.padding()
+      
+      
+      // 버튼 데이터 변환
+      HStack {
+          Button(framework) {
+              // cannot asign to property: 'self' is immutable
+              self.framework = "SwiftUI"
+          }
+      }
+      
       VStack {
           HStack(spacing: 20) {
               // button 1
